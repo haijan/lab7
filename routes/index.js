@@ -5,11 +5,11 @@ var projects = require('../projects.json');
  */
 
 exports.view = function(request, response){
-	projects["viewAlt"] = false;
+	projects["viewAlt"] = false; //if false
   	response.render('index', projects);
 };
 
 exports.viewAlt = function(request, response){
-	projects["viewAlt"] = true;
+	projects["viewAlt"] = true; //if true then have little like button
   	response.render('index', projects);
 };
